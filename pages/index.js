@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import Nav from "../components/nav";
+import Nav from "../components/Nav";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
@@ -14,8 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <main className="container mx-auto flex flex-col items-center justify-center min-h-screen p-4">
-        <h1>Welcome to retain! Save a job!</h1>
+      <main className="flex h-screen">
+        <Hero />
       </main>
     </>
   );

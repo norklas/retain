@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { BsBriefcase } from "react-icons/bs";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -52,11 +52,27 @@ export default function Nav() {
       >
         <span
           onClick={() => setOpen(!open)}
-          className="flex items-center p-4 hover:bg-green-700 hover:text-white "
+          className="flex items-center p-4 hover:bg-green-700 text-green-700 hover:text-white justify-center"
+        >
+          <span className="text-2xl font-semibold drop-shadow-lg">retain</span>
+        </span>
+        <span
+          onClick={() => setOpen(!open)}
+          className="flex items-center p-4 hover:bg-green-700 hover:text-white"
         >
           <span className="mr-2 text-2xl">
             <AiOutlineHome />
           </span>
+          <span className="ml-2">Home</span>
+        </span>
+        <span
+          onClick={() => setOpen(!open)}
+          className="flex items-center p-4 hover:bg-green-700 hover:text-white"
+        >
+          <span className="mr-2 text-2xl">
+            <BsBriefcase />
+          </span>
+          <span className="ml-2">Saved Jobs</span>
         </span>
       </aside>
     </nav>
